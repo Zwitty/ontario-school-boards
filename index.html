@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="schoolData">
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -11,7 +11,7 @@
   
   <!-- MY STYLES -->
   <link rel="stylesheet" href="/assets/Zwitty-1.0.0.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,500,700' rel='stylesheet' type='text/css'>
   
   <!-- LIBRARIES -->
@@ -23,6 +23,7 @@
   <!-- MY JAVASCRIPT -->
 
   <script src="js/schools.js"></script>
+  <script src="app/js/script.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -85,49 +86,11 @@
 
   <div id="page-wrap">
   	<div id="page-content">
-		<div id="content">
+		  <div id="content">
+        
+        <vis-controls></vis-controls>
+    
 
-<div style="margin:100;">
-    <div style="display: table-cell; width: 100;">
-        <label for="langdropdown">Language: </label>
-        <select id="langdropdown">
-            <option val="english">English</option>
-            <option val="french">French</option>
-        </select>
-    </div>
-    <div style="display: table-cell; width: 150; padding: 30px;">
-        <label for="typedropdown">District Type: </label>
-        <select id="typedropdown">
-            <option val="public">Public</option>
-            <option val="catholic">Catholic</option>
-        </select>
-    </div>
-    <!--<div style="display: table-cell; width: 150;">
-        <button id="update" onclick="updateClicked()">Update</button>
-    </div>-->
-</div>
-<div style="margin:100;">
-    <div style="display: table-cell; width: 100;">
-        <label for="yeardropdown">Academic Year: </label>
-        <select id="yeardropdown">
-            <option val="2011-2012">2011-2012</option>
-            <option val="2012-2013">2012-2013</option>
-        </select>
-    </div>
-    <div style="display: table-cell; width: 150; padding: 30px;">
-        <label for="datadropdown">Data Type: </label>
-        <select id="datadropdown">
-            <option val="enrolment">Enrolment</option>
-            <option val="language">Language</option>
-            <option val="female">Female</option>
-            <option val="male">Male</option>
-
-        </select>
-    </div>
-    <div style="display: table-cell; width: 150;">
-        <button id="update" onclick="updateClicked()">Update</button>
-    </div>
-</div>
 <h2 id="title">Ontario</h2>
 <div id="vis"><div id="on"></div></div>
 <div id="scale">
